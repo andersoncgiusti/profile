@@ -1,0 +1,370 @@
+@charset "utf-8";
+html, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.into{    
+    height: 50px;
+    color:white;      
+}
+
+.into ul{
+    list-style: none;
+    text-align: right;
+    height: 50px;
+    margin-top: 0px;
+    padding-left: 0px;  
+}
+
+.into li{
+    display:inline-block;
+    line-height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: 100;
+    animation-name: navegador;
+    animation-duration: 4s;
+}
+
+.into a{
+    color: aqua;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.into a:hover{
+    color: #EB3C7C;
+}
+
+.into li.menu{
+    display: none;    
+}
+
+.into li.menu:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.pro div{
+    display: inline-block;
+}
+
+.profile-pic{
+    height: 650px;
+    vertical-align: top;
+    width: 40%;
+    text-align: center;
+}
+
+.profile-pic img{
+    width: 300px;
+    border-radius:300px;
+    margin-top: 100px;
+}
+
+.profile-title{    
+    width: 59%;
+    height: 650px;    
+}
+
+.profile-title h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 200px;
+    font-weight: 400;
+}
+
+.profile-title h2{
+    font-size: 24px;
+    font-weight: 100;
+    color: white;
+    margin-top: -28px;
+}
+
+.photo img{
+    width: 200px;
+    border-radius:200px;
+   float: left;
+   margin: 20px;
+}
+
+.cv{
+    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-left:200px;
+    padding-right: 200px;
+    line-height: 22px;
+    animation-name: conteudo;
+    animation-duration: 2s;
+}
+
+.cv h1{
+  color:white;
+  font-weight: normal;
+  font-size: 30px; 
+  
+}
+.cv h2{
+  color:aqua;
+  font-size:16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 50px;
+}
+
+.cv h3{
+  font-size: 12px;
+  color: aqua;
+  text-transform: uppercase;
+
+}
+
+.cv p{
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    text-align: justify;
+}
+
+.way{
+   list-style: none;
+   padding: 0%;
+   color: white;
+}
+
+.way li{
+    display: inline-block;
+}
+  
+.base{
+    width: 60%;
+    background-color:black;
+    height: 270px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.nome{
+    width: 20%;
+    background-color:#226CAC;
+    color: white;
+    height: 25px;
+    float: left;
+    text-align: center;  
+}
+
+.valor{
+    width: 80%;
+    background-color:#98E8FF;
+    height: 25px;
+    float: right;    
+}
+
+.centralizado{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.busca{
+  background-color:#226CAC;
+  height: 25px;
+}
+
+.nome, .valor{
+    margin-bottom: 10px;
+    box-shadow: 0 0 2px white;
+}
+
+.icon{
+    position: relative;
+    right: 45px;
+    list-style: none;    
+}
+
+.icon li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.mini{
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;    
+}
+
+.mini a{
+    text-decoration: none;
+}
+
+.clean{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color:black;
+    padding-top: 120px;
+    transition: 1s;
+}
+
+.clean:hover{
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.clean-text{    
+    text-align: center;
+}
+
+.clean-text h1{
+    text-transform: uppercase;  
+    font-size: 16px;
+    color: aqua;
+    margin-top: 0px;
+}
+
+.clean-text h2{
+    text-transform: none;
+    font-weight: 100;
+    margin-top: 0px;
+}
+
+h4{
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+.direitos h4{
+    position: relative;
+    top: 230px;
+    text-align: center;
+}
+
+.foto-trabalhos{
+    width: 40%;
+}
+
+.alterar a{
+    text-decoration: none;
+    color:#EB3C7C;
+}
+
+.back{
+    color: aqua;
+}
+
+@keyframes conteudo{
+    0%   {opacity: 0;transform: translate(-30px,0px)}
+    100% {opacity: 1;transform: translate(0px,0px)}
+}
+
+@media (max-width: 1000px){
+    .into li{
+        display: none;
+    }   
+
+    .into li.menu{
+        display: inline-block;
+    }
+
+    .cv{
+        padding-bottom: 30px;
+        padding-top: 10px;
+        padding-left:5%;
+        padding-right: 5%;
+    }
+
+    .cv p{
+        color: white;
+        font-size: 18px;
+    }
+
+    .base{
+        width: 100%;
+        background-color:black;
+        height: 270px;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+    .nome{
+        width: 25%;
+        background-color:#226CAC;
+        color: white;
+        height: 25px;
+        float: left;
+        text-align: center;
+    }
+
+    .valor{
+        width: 75%;
+        background-color:#98E8FF;
+        height: 25px;
+        float: right;    
+    }
+
+    .photo{
+        max-width: 100%;
+    }
+
+    .mini{
+        max-width: 100%;
+        background-size: auto 100%;
+    }
+
+    .clean{
+        opacity: 0.8;
+    }
+
+    .dados p{
+    font-size: 14px;
+    }
+
+    .cv h2{
+        text-align: center;
+    }
+
+    .cv p{
+        text-align: left;
+        line-height: 30px;
+    }
+
+    h4{
+        position: relative;
+        top: 200px;
+        text-align: center;
+    }
+
+    .menujs{
+        height: auto; 
+    }
+
+    .menujs ul{
+        height: auto;
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%;
+    } 
+
+    .menujs li {
+        display: block;
+        border-bottom: solid aqua 1px;
+        width: 100%;
+        padding: 0;   
+    }
+
+    .body {
+        color: white;
+    }
+}
